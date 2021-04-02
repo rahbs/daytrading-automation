@@ -78,19 +78,5 @@ for i in range(67,68):
     # 웹브라우저 닫기
     driver.close()
 
-    # kr.investing.com 접속
-    driver = webdriver.Chrome()
-    driver.get(baseUrl+'/equities/south-korea')
-    driver.maximize_window()
-
-    #로그인
-    email = 'rahbs@naver.com'
-    password = 'qhfk303513'
-    driver.find_element_by_xpath('/html/body/div[5]/header/div[1]/div/div[4]/span[1]/div/a[1]').click()
-    driver.find_element_by_xpath('//*[@id="loginFormUser_email"]').send_keys(email)
-    driver.find_element_by_xpath('//*[@id="loginForm_password"]').send_keys(password)
-    driver.find_element_by_xpath('//*[@id="signup"]/a').click()
-    time.sleep(1)
-
 # 웹브라우저 닫기
 #driver.close()
